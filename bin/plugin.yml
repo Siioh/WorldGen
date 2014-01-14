@@ -1,0 +1,10 @@
+name: WorldGen
+main: com.gmail.ramsarrantyler.WorldGen
+version: 1.0
+
+commands:
+   blockbreak:
+      description: Toggles the ability to bypass un-breakable block forces.
+      usage: /<command>
+      permission: WorldGen.blockbreaktoggle
+      permission-message: You don’t have the required permission.
