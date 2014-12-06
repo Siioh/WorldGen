@@ -1,10 +1,12 @@
 package com.gmail.ramsarrantyler;
 
 import org.bukkit.Bukkit;
+import org.bukkit.DyeColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.plugin.java.JavaPlugin;
 
+@SuppressWarnings("deprecation")
 public final class WorldGen extends JavaPlugin {
 	
 	@Override
@@ -53,7 +55,7 @@ public final class WorldGen extends JavaPlugin {
 			int x = block.getX();
 			int y = block.getY()-2;
 			int z = block.getZ();
-			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES) {
+			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD) {
 				Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.AIR);
 			} else {
 			Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.OBSIDIAN);
@@ -67,7 +69,7 @@ public final class WorldGen extends JavaPlugin {
 			int x = block.getX();
 			int y = block.getY()-2;
 			int z = block.getZ();
-			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES) {
+			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD) {
 				Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.AIR);
 			} else {
 			Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.OBSIDIAN);
@@ -81,7 +83,7 @@ public final class WorldGen extends JavaPlugin {
 			int x = block.getX();
 			int y = block.getY()-2;
 			int z = block.getZ();
-			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES) {
+			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD) {
 				Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.AIR);
 			} else {
 			Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.OBSIDIAN);
@@ -96,7 +98,7 @@ public final class WorldGen extends JavaPlugin {
 			int x = block.getX();
 			int y = block.getY()-2;
 			int z = block.getZ();
-			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES) {
+			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD) {
 				Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.AIR);
 			} else {
 			Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.OBSIDIAN);
@@ -110,7 +112,7 @@ public final class WorldGen extends JavaPlugin {
 			int x = block.getX();
 			int y = block.getY()-2;
 			int z = block.getZ();
-			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES) {
+			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD) {
 				Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.AIR);
 			} else {
 			Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.OBSIDIAN);
@@ -124,7 +126,7 @@ public final class WorldGen extends JavaPlugin {
 			int x = block.getX();
 			int y = block.getY()-2;
 			int z = block.getZ();
-			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES) {
+			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD) {
 				Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.AIR);
 			} else {
 			Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.OBSIDIAN);
@@ -156,7 +158,7 @@ public final class WorldGen extends JavaPlugin {
 			int x = block.getX();
 			int y = block.getY()-1;
 			int z = block.getZ();
-			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES) {
+			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD) {
 				Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.AIR);
 			} else {
 			Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.HARD_CLAY);
@@ -170,7 +172,7 @@ public final class WorldGen extends JavaPlugin {
 			int x = block.getX();
 			int y = block.getY()-1;
 			int z = block.getZ();
-			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES) {
+			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD) {
 				Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.AIR);
 			} else {
 			Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.HARD_CLAY);
@@ -184,7 +186,7 @@ public final class WorldGen extends JavaPlugin {
 			int x = block.getX();
 			int y = block.getY()-1;
 			int z = block.getZ();
-			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES) {
+			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD) {
 				Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.AIR);
 			} else {
 			Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.HARD_CLAY);
@@ -199,7 +201,7 @@ public final class WorldGen extends JavaPlugin {
 			int x = block.getX();
 			int y = block.getY()-1;
 			int z = block.getZ();
-			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES) {
+			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD) {
 				Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.AIR);
 			} else {
 			Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.HARD_CLAY);
@@ -213,7 +215,7 @@ public final class WorldGen extends JavaPlugin {
 			int x = block.getX();
 			int y = block.getY()-1;
 			int z = block.getZ();
-			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES) {
+			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD) {
 				Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.AIR);
 			} else {
 			Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.HARD_CLAY);
@@ -227,7 +229,7 @@ public final class WorldGen extends JavaPlugin {
 			int x = block.getX();
 			int y = block.getY()-1;
 			int z = block.getZ();
-			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES) {
+			if(Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.LEAVES || Bukkit.getWorld("world").getBlockAt(x, y, z).getType() == Material.WOOD) {
 				Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.AIR);
 			} else {
 			Bukkit.getWorld("world").getBlockAt(x, y, z).setType(Material.HARD_CLAY);
@@ -279,6 +281,133 @@ public final class WorldGen extends JavaPlugin {
 			Bukkit.getServer().getWorld("world").getBlockAt(x, 100, 2).setType(Material.GLASS);
 			x=x-1;
 		}
+		//Set BLUE spawn
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, 101).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, 102).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, 103).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, 104).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, 105).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, 106).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, 107).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, 101).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, 102).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, 103).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, 104).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, 105).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, 106).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, 107).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, 101).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, 101).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, 101).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, 101).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, 101).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, 101).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, 107).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, 107).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, 107).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, 107).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, 107).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, 107).setTypeIdAndData(35, DyeColor.BLUE.getData(), true);
+		
+		//Set inside
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, 102).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, 102).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, 102).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, 102).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, 102).setType(Material.LAPIS_BLOCK);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, 103).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, 103).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, 103).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, 103).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, 103).setType(Material.LAPIS_BLOCK);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, 104).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, 104).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, 104).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, 104).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, 104).setType(Material.LAPIS_BLOCK);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, 105).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, 105).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, 105).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, 105).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, 105).setType(Material.LAPIS_BLOCK);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, 106).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, 106).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, 106).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, 106).setType(Material.LAPIS_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, 106).setType(Material.LAPIS_BLOCK);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 151, 102).setType(Material.STONE_PLATE);
+		
+		//Set RED spawn
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, -100).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, -101).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, -102).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, -103).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, -104).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, -105).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, -106).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, -100).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, -101).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, -102).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, -103).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, -104).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, -105).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(-1, 150, -106).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, -100).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, -100).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, -100).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, -100).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, -100).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, -100).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(5, 150, -106).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, -106).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, -106).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, -106).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, -106).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, -106).setTypeIdAndData(35, DyeColor.RED.getData(), true);
+		
+		//Set inside
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, -105).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, -105).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, -105).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, -105).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, -105).setType(Material.REDSTONE_BLOCK);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, -104).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, -104).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, -104).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, -104).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, -104).setType(Material.REDSTONE_BLOCK);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, -103).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, -103).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, -103).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, -103).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, -103).setType(Material.REDSTONE_BLOCK);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, -102).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, -102).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, -102).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, -102).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, -102).setType(Material.REDSTONE_BLOCK);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(0, 150, -101).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(1, 150, -101).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 150, -101).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(3, 150, -101).setType(Material.REDSTONE_BLOCK);
+		Bukkit.getServer().getWorld("world").getBlockAt(4, 150, -101).setType(Material.REDSTONE_BLOCK);
+		
+		Bukkit.getServer().getWorld("world").getBlockAt(2, 151, -101).setType(Material.STONE_PLATE);
 	}
 	
 	@Override
